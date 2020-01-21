@@ -1,6 +1,9 @@
 /**
  * Эту функцию трогать не нужно
  */
+/**
+ * Эту функцию трогать не нужно
+ */
 function print(text) {
   console.log(text);
 }
@@ -10,6 +13,10 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
+    if (!name || name.includes(' ') || name.length < 4){
+      return false;
+    }
+    return true;
 }
 
 function sayHello() {
